@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>계산기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>계산기</h1>
+    <div class="calculator">
+        <input type="number" id="number1" placeholder="첫 번째 숫자">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" id="number2" placeholder="두 번째 숫자">
+        <button onclick="calculate()">=</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
