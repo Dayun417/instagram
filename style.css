@@ -6,21 +6,21 @@
 
 /* 왼쪽 사이드바 */
 #sidebar {
-    width: 250px;
+    width: 16vw;
     height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
     background-color: white;
     border-right: 1px solid lightgray;
-    padding: 25px;
+    padding: 2vw;
     box-sizing: border-box;
 }
 
 /* 인스타 로고 */
 .logo {
-    width: 120px;
-    margin-bottom: 30px;
+    width: 8vw;
+    margin-bottom: 2vw;
 }
 
 .logo:hover {
@@ -33,15 +33,15 @@
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 30px;  /* 아이콘 사이 거리 */
-    font-size: 18px;
+    gap: 2vw;  /* 아이콘 사이 거리 */
+    font-size: 1.2vw;
 }
 
 /* 아이콘 옆 글자 */
 .menu li {
     display: flex;
     align-items: center;
-    gap: 15px;  /* 아이콘 글자 사이 거리 */
+    gap: 1vw;  /* 아이콘 글자 사이 거리 */
     cursor: pointer;  /* 커서 바뀜 */
 }
 
@@ -57,13 +57,13 @@
 
 /* 아이콘 크기 */
 .menu li i {
-    font-size: 22px;
+    font-size: 1.6vw;
 }
 
 /* 본문 */
 #content {
-    margin-left: 270px;
-    padding: 20px;
+    margin-left: 18vw;
+    padding: 2vw;
     flex: 1;
 }
 
@@ -71,58 +71,76 @@
 #profile {
     display: flex;
     align-items: flex-start;
-    gap: 40px;
-    margin-top: 20px;
-    padding-left: 200px;
+    gap: 2.5vw;
+    margin-top: 1.5vw;
+    padding-left: 13vw;
 }
 
 /* 사용자 정보 */
 #profile_info {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    margin-left: 50px;
+    gap: 0.3vw;
+    margin-left: 3vw;
 }
+
+#profile_info strong {
+    font-size: 1.2vw;
+}  
 
 /* 사용자 이름 영역 */
 .user_name {
-    margin-top: 8px;
+    margin-top: 0.6vw;
 }
 
 /* 링크 */
 .profile_link {
-    padding-left: 380px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    margin-left: 60px;
+    padding-left: 25vw;
+    margin-top: 0.8vw;
+    margin-bottom: 2vw;
+    margin-left: 4vw;
 }
 
+.profile_link a {
+    font-size: 1.1vw;
+}
+
+/* 사진첩 */
+.sub_text {
+    color: gray;
+    font-size: 1vw;
+}
+
+/* 고양이 이모티콘 */
+.emoji {
+    font-size: 1.2vw;
+}  
 
 /* 아이디, 버튼 */
 .id_and_buttons {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1vw;
 }
 
 /* 아이디 */
 #id {
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 400;
 }
 
 /* 아이디 옆 버튼 영역 */
 .button_group {
     display: flex;
-    gap: 10px;
+    gap: 0.8vw;
 }
 
 /* 아이디 옆 버튼 */
 button {
-    font-size: 15px;
+    font-size: 1vw;
     border: solid rgb(236, 236, 236) 1px;
     border-radius: 10px;
-    padding: 5px 10px;
+    padding: 0.5vw 1.2vw;
     background-color: rgb(236, 236, 236);
 }
 
@@ -132,47 +150,52 @@ button {
     cursor: pointer;  /* 커서 바뀜 */
 }
 
-/* 이미지 둥글게 */
-.circle_pic {
-    border: solid white 1px;
+/* 회색 외곽 원 */
+.highlight_pic_wrapper {
+    width: 6.3vw;
+    height: 6.3vw;
+    margin: 0 auto;
+
+    border: 2px solid lightgray;
     border-radius: 50%;
+    padding: 0.3vw;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 이미지 가운데로 */
+    overflow: hidden; /* 넘치는 거 잘라냄 */
+}
+
+/* 안에 들어가는 이미지 */
+.circle_pic {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-/* 하이라이트 바깥쪽 원 */
-.highlight_pic_wrapper {
-    width: 90px;
-    height: 90px;
-    margin: 0 auto;
-
-    border: 2px solid lightgray; /* 회색 테두리 */
-    border-radius: 50%;  /* 동그랗게 */
-    padding: 3px;  /* 이미지랑 선 사이 간격 */
-    box-sizing: border-box;  /* 패딩 포함되게 해서 안 찌그러지게 */
-}
+    border-radius: 50%;
+    display: block;
+}  
 
 /* 프로필 크기 */
 #profile_pic {
-    width: 150px;
-    height: 150px;
-    margin-top: 40px;
+    width: 10vw;
+    height: 10vw;
+    margin-top: 3vw;
 }
 
 /* 하이라이트 크기*/
 .highlight_pic {
-    width: 80px;
-    height: 80px;
+    width: 5.5vw;
+    height: 5.5vw;
     margin: auto;
 }
 
 /* 하이라이트 영역 */
 #highlight_area {
     display: grid;
-    grid-template-columns: 150px 150px 1fr;
-    margin-top: 20px;
-    padding-left: 140px;
+    grid-template-columns: 8vw 8vw 1fr;
+    margin-top: 1.5vw;
+    padding-left: 10vw;
 }
 
 /* 하이라이트 글자 */
@@ -188,15 +211,15 @@ button {
 /* 통계 */
 #stat_bar {
     display: flex;
-    gap: 30px;
-    margin: 10px 0;
-    font-size: 16px;
+    gap: 2vw;
+    margin: 0.8vw 0;
+    font-size: 1.2vw;
 }
 
 /* 숫자, 글자 */
 .stat {
     display: inline-flex;
-    gap: 6px;
+    gap: 0.5vw;
     align-items: baseline;  /* 숫자와 텍스트 높이 기준 맞춤 */
 }
 
@@ -219,8 +242,8 @@ button {
 .post_grid {
     display: flex;  /* 가로로 정렬 */
     justify-content: center;  /* 가운데 정렬  */
-    gap: 3px;  /* 사진 간격 */
-    margin-top: 3px;  /* 사진 위 아래 간격 */
+    gap: 0.3vw;  /* 사진 간격 */
+    margin-top: 0.3vw;  /* 사진 위 아래 간격 */
 }
 
 /* 게시물 이미지 조정 */
@@ -244,12 +267,12 @@ button {
     position: relative;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 30px;
-    margin-left: 300px;
+    margin-bottom: 2vw;
+    margin-left: 18vw;
 
-    gap: 10px;
-    font-size: 15px;
-    height: 30px;
+    gap: 0.8vw;
+    font-size: 1vw;
+    height: 2.5vw;
 }
 
 /* 아이콘에 마우스 올리면 */
@@ -259,14 +282,14 @@ button {
 }
 
 .icon_content {
-    padding-top: 12px; /* 선, 아이콘 사이 간격 */
+    padding-top: 0.8vw; /* 선, 아이콘 사이 간격 */
     display: inline-block;
 }
 
 hr {
     border: solid rgb(219, 219, 219) 1px;
-    width: 1000px;
-    margin-top: 60px;
+    width: 65vw;
+    margin-top: 4vw;
     margin-bottom: 0;
     padding: 0;
 }
