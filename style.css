@@ -34,7 +34,16 @@
     display: flex;
     flex-direction: column;
     gap: 2vw;  /* 아이콘 사이 거리 */
-    font-size: 1.2vw;
+    font-size: 1vw;
+}
+
+.menu2 {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;  /* 아이콘 사이 거리 */
+    font-size: 1.5vw;
 }
 
 /* 아이콘 옆 글자 */
@@ -46,7 +55,7 @@
 }
 
 /* 기어 아이콘에 마우스 올리면 */
-.menu:hover {
+.menu2:hover {
     cursor: pointer;  /* 커서 바뀜 */
 }
 
@@ -85,36 +94,42 @@
 }
 
 #profile_info strong {
-    font-size: 1.2vw;
-}  
-
-/* 사용자 이름 영역 */
-.user_name {
-    margin-top: 0.6vw;
-}
-
-/* 링크 */
-.profile_link {
-    padding-left: 25vw;
-    margin-top: 0.8vw;
-    margin-bottom: 2vw;
-    margin-left: 4vw;
-}
-
-.profile_link a {
     font-size: 1.1vw;
 }
 
+/* 사용자 영역 */
+.user_detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4vw;
+    line-height: 1.2;
+    font-size: 0.9vw;
+}
+
+/* 사용자 이름 */
+.username {
+    font-size: 0.5vw;
+    font-weight: bold;
+}
+
 /* 사진첩 */
-.sub_text {
+.desc {
     color: gray;
-    font-size: 1vw;
+    font-size: 1.1vw;
 }
 
 /* 고양이 이모티콘 */
 .emoji {
-    font-size: 1.2vw;
-}  
+    font-size: 1vw;
+}
+
+/* 링크 */
+.profile_link {
+    font-size: 1vw;
+    color: rgb(0, 0, 155);
+    text-decoration: none;  /* 밑줄 제거 */
+    margin-top: 1vw;
+}
 
 /* 아이디, 버튼 */
 .id_and_buttons {
@@ -140,7 +155,7 @@ button {
     font-size: 1vw;
     border: solid rgb(236, 236, 236) 1px;
     border-radius: 10px;
-    padding: 0.5vw 1.2vw;
+    padding: 0.2vw 0.8vw;
     background-color: rgb(236, 236, 236);
 }
 
@@ -201,6 +216,13 @@ button {
 /* 하이라이트 글자 */
 .highlight {
     text-align: center;
+}
+
+/* 하이라이트 텍스트 */
+.highlight strong {
+    display: block;
+    font-size: 0.7vw;
+    margin-top: 1vw;
 }
 
 /* 하이라이트에 마우스 올리면 */
@@ -286,6 +308,7 @@ button {
     display: inline-block;
 }
 
+/* 아이콘 위 선 */
 hr {
     border: solid rgb(219, 219, 219) 1px;
     width: 65vw;
