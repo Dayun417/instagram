@@ -1,103 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="style.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <title>instagram</title>
 </head>
 <body>
-    <div>
-        <img src="image/instalogo.JPG" width="100px">
-        <input type="search" value="검색">
-    </div>
-    
-    <div id="profile">
-        <div id="profile_pic">
-            <img class="circle_pic" src="https://avatars.githubusercontent.com/u/180733458?v=4">
-        </div>
+    <div id="container">
+        <!-- 왼쪽 사이드바 -->
+        <nav id="sidebar">
+            <img src="image/instalogo.JPG" class="logo">
+            <ul class="menu">
+                <li><i class="fa-solid fa-house"></i> 홈</li>
+                <li><i class="fa-solid fa-magnifying-glass"></i> 검색</li>
+                <li><i class="fa-regular fa-compass"></i> 탐색 탭</li>
+                <li><i class="fa-solid fa-film"></i> 릴스</li>
+                <li><i class="fa-regular fa-paper-plane"></i> 메시지</li>
+                <li><i class="fa-regular fa-heart"></i> 알림</li>
+                <li><i class="fa-regular fa-square-plus"></i> 만들기</li>
+                <li><i class="fa-regular fa-user"></i> 프로필</li>
+                <li><i class="fa-solid fa-bars"></i> 더 보기</li>
+            </ul>
+        </nav>
 
-        <div id="profile_info">
-            <div id="id">dx_yun2
-                <button><strong>프로필 편집</strong></button>
-            </div>
-            
-            <div id="stat_bar">
-                <div class="stat">
-                    <span style="color: gray;">게시물</span>
-                    <strong>25</strong>
+        <!-- 오른쪽 콘텐츠 -->
+        <main id="content">
+            <div id="profile">
+                <div id="profile_pic">
+                    <img class="circle_pic" src="https://avatars.githubusercontent.com/u/180733458?v=4">
                 </div>
-                <div class="stat">
-                    <span style="color: gray;">팔로워</span>
-                    <strong>105</strong>
-                </div>
-                <div class="stat">
-                    <span style="color: gray;">팔로우</span>
-                    <strong>106</strong>
+
+                <div id="profile_info">
+                    <div class="id_and_buttons">
+                        <div id="id">dx_yun2</div>
+                        
+                        <div class="button_group">
+                            <button><strong>프로필 편집</strong></button>
+                            <button><strong>보관된 스토리 보기</strong></button>
+                            
+                        </div>
+
+                        <ul class="menu">
+                            <i class="fa-solid fa-gear"></i>
+                        </ul>
+                    </div>
+
+                    <div id="stat_bar">
+                        <div class="stat">
+                            <span class="label">게시물</span>
+                            <span class="count">25</span>
+                        </div>
+                        <div class="stat">
+                            <span class="label">팔로워</span>
+                            <span class="count">105</span>
+                        </div>
+                        <div class="stat">
+                            <span class="label">팔로우</span>
+                            <span class="count">106</span>
+                        </div>
+                    </div>                                      
+
+                    <strong>이다윤</strong>
+                    <span style="color: gray;">사진첩</span>
+                    🐱
                 </div>
             </div>
 
-            <strong>이다윤</strong>
-            <span style="color: gray;">사진첩</span>
-            🐱
-        </div>   
-    </div>
-        
-    <div>
-        <p>
-            <a href="https://github.com/Dayun417">
-                Dayun417.github.io
-            </a>
+            <div class="profile_link">
+                <p>
+                    <a href="https://github.com/Dayun417">Dayun417.github.io</a>
+                    
+                </p>
+            </div>
+
+            <div id="highlight_area">
+                <div class="highlight">
+                    <div class="highlight_pic">
+                        <img class="circle_pic" src="image/high1.jpg" width="35px">
+                    </div>
+                    <div>
+                        <strong style="font-size: 10px;">JP</strong>
+                    </div>
+                </div>
+
+                <div class="highlight">
+                    <div class="highlight_pic">
+                        <img class="circle_pic" src="image/high2.jpg" width="35px">
+                    </div>
+                    <div>
+                        <strong style="font-size: 10px;">IT</strong>
+                    </div>
+                </div>
+            </div>
+
             <br>
-        </p>    
-    </div>
+            <div>아이콘이 들어갈 자리</div>
 
-    <div id="highlight_area">
-        <div class="highlight">
-            <div class="highlight_pic">
-                <img class="circle_pic" src="image/high1.jpg" width="35px">
+            <div class="post_grid">
+                <img src="image/main1.JPG" width="25%">
+                <img src="image/main2.JPG" width="25%">
+                <img src="image/main3.JPG" width="25%">
             </div>
-    
-            <div>
-                <strong style="font-size: 10px;">JP</strong>
+            <div class="post_grid">
+                <img src="image/main4.JPG" width="25%">
+                <img src="image/main5.JPG" width="25%">
+                <img src="image/main6.JPG" width="25%">
             </div>
-        </div>    
-
-        <div class="highlight">
-            <div class="highlight_pic">
-                <img class="circle_pic" src="image/high2.jpg" width="35px">
+            <div class="post_grid">
+                <img src="image/main7.JPG" width="25%">
+                <img src="image/main8.JPG" width="25%">
+                <img src="image/main9.JPG" width="25%">
             </div>
-
-            <div>
-                <strong style="font-size: 10px;">IT</strong>
-            </div>
-        </div>
-        <div></div>
+        </main>
     </div>
-
-    
-    <br>
-    <div>
-        아이콘이 들어갈 자리
-    </div>
-
-    <div>
-        <div class="thumbnail_grid">
-            <img src="image/main1.JPG" width="25%">
-            <img src="image/main2.JPG" width="25%">
-            <img src="image/main3.JPG" width="25%">
-        </div>
-        <div class="thumbnail_grid">
-            <img src="image/main4.JPG" width="25%">
-            <img src="image/main5.JPG" width="25%">
-            <img src="image/main6.JPG" width="25%">
-        </div>
-        <div class="thumbnail_grid">
-            <img src="image/main7.JPG" width="25%">
-            <img src="image/main8.JPG" width="25%">
-            <img src="image/main9.JPG" width="25%">
-        </div>
-    </div>
-    
 </body>
 </html>
