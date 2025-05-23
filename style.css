@@ -23,6 +23,10 @@
     margin-bottom: 30px;
 }
 
+.logo:hover {
+    cursor: pointer;  /* 커서 바뀜 */
+}
+
 /* 아이콘 영역 */
 .menu {
     list-style: none;
@@ -38,7 +42,12 @@
     display: flex;
     align-items: center;
     gap: 15px;  /* 아이콘 글자 사이 거리 */
-    cursor: pointer;
+    cursor: pointer;  /* 커서 바뀜 */
+}
+
+/* 기어 아이콘에 마우스 올리면 */
+.menu:hover {
+    cursor: pointer;  /* 커서 바뀜 */
 }
 
 /* 글자에 마우스 올리면 */
@@ -64,25 +73,27 @@
     align-items: flex-start;
     gap: 40px;
     margin-top: 20px;
-    padding-left: 190px;
+    padding-left: 200px;
 }
 
-/* 정보(게시물, 팔로워, 팔로우) */
+/* 사용자 정보 */
 #profile_info {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin-left: 50px;
 }
 
 /* 링크 */
 .profile_link {
-    padding-left: 410px;
+    padding-left: 380px;
     margin-top: 15px;
     margin-bottom: 30px;
+    margin-left: 60px;
 }
 
 
-/* 아이디, 버튼들 */
+/* 아이디, 버튼 */
 .id_and_buttons {
     display: flex;
     align-items: center;
@@ -95,19 +106,25 @@
     font-weight: 400;
 }
 
-/* 아이디 옆 버튼들 */
+/* 아이디 옆 버튼 영역 */
 .button_group {
     display: flex;
     gap: 10px;
 }
 
-/* 아이디 옆 버튼들 */
+/* 아이디 옆 버튼 */
 button {
     font-size: 15px;
     border: solid rgb(236, 236, 236) 1px;
     border-radius: 10px;
     padding: 5px 10px;
     background-color: rgb(236, 236, 236);
+}
+
+/* 버튼에 마우스 올리면 */
+.button:hover {
+    background-color: rgb(205, 205, 205);
+    cursor: pointer;  /* 커서 바뀜 */
 }
 
 /* 이미지 둥글게 */
@@ -119,17 +136,18 @@ button {
     object-fit: cover;
 }
 
-/* 프로필 */
+/* 프로필 크기 */
 #profile_pic {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
+    margin-top: 40px;
 }
 
-/* 하이라이트 */
+/* 하이라이트 크기*/
 .highlight_pic {
     width: 80px;
     height: 80px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 /* 하이라이트 영역 */
@@ -143,6 +161,11 @@ button {
 /* 하이라이트 글자 */
 .highlight {
     text-align: center;
+}
+
+/* 하이라이트에 마우스 올리면 */
+.highlight:hover {
+    cursor: pointer;  /* 커서 바뀜 */
 }
 
 /* 통계 */
@@ -179,13 +202,19 @@ button {
 .post_grid {
     display: flex;  /* 가로로 정렬 */
     justify-content: center;  /* 가운데 정렬  */
-    gap: 6px;  /* 사진 간격 */
-    margin-top: 6px;  /* 사진 위 아래 간격 */
+    gap: 3px;  /* 사진 간격 */
+    margin-top: 3px;  /* 사진 위 아래 간격 */
 }
 
+/* 게시물 이미지 조정 */
 .post_grid img {
     width: 25%;  /* 이미지 크기 */
     height: auto;  /* 이미지 비율 유지 */
     object-fit: cover;
     display: block;  /* 여백 지우기 */
+}
+
+/* 게시물에 마우스 올리면 */
+.post_grid:hover {
+    cursor: pointer;  /* 커서 바뀜 */
 }
