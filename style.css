@@ -198,6 +198,11 @@ button {
     margin-top: 3vw;
 }
 
+/* 프로필에 마우스 올리면 */
+#profile_pic img:hover {
+    cursor: pointer;  /* 커서 바뀜 */
+}
+
 /* 하이라이트 크기*/
 .highlight_pic {
     width: 5.5vw;

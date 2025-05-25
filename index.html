@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
     <title>Instagram</title>
 </head>
 <body>
@@ -34,10 +35,13 @@
 
                 <div id="profile_info">
                     <div class="id_and_buttons">
-                        <div id="id">dx_yun2</div>
+                        <div id="id">
+                            <span>dx_yun2</span>
+                        </div>
                         
                         <div class="button_group">
-                            <button class="button"><strong>프로필 편집</strong></button>
+                            <button id="editBtn" class="button"><strong>프로필 편집</strong></button>
+                            <button id="saveBtn" class="button" style="display:none;"><strong>프로필 편집 완료</strong></button>
                             <button class="button"><strong>보관된 스토리 보기</strong></button>       
                         </div>
 
@@ -65,7 +69,7 @@
                         <strong class="username">이다윤</strong>
                         <span class="desc">사진첩</span>
                         <span class="emoji">🐱</span>
-                        <a href="#" class="profile_link">Dayun417.github.io</a>
+                        <a href="https://github.com/Dayun417" class="profile_link">@Dayun417.github.io</a>
                     </div>
                     
                 </div>
